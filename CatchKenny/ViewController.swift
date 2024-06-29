@@ -42,7 +42,8 @@ class ViewController: UIViewController {
                 self.viewWillAppear(true)
             }
             let noButton = UIAlertAction(title: "NO", style: UIAlertAction.Style.default) { UIAlertAction in
-                
+                _ = self.navigationController?.popToRootViewController(animated: true)
+
             }
             alert.addAction(okButton)
             alert.addAction(noButton)

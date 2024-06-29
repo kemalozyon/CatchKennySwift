@@ -99,7 +99,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wcs-WJ-NBf" secondAttribute="trailing" constant="30" id="eKz-mN-ayy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9oa-hT-3uM"/>
+                    <navigationItem key="navigationItem" customizationIdentifier="goBack" id="9oa-hT-3uM"/>
                     <connections>
                         <outlet property="imageView" destination="17K-eo-0xf" id="hDJ-Sk-CYo"/>
                         <outlet property="nameLabel" destination="Wcs-WJ-NBf" id="UYG-6X-8vQ"/>
