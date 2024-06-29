@@ -13,6 +13,8 @@
 		3FBF3A1A2C2FB67E0017D089 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF3A192C2FB67E0017D089 /* Base */; };
 		3FBF3A1C2C2FB67F0017D089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF3A1B2C2FB67F0017D089 /* Assets.xcassets */; };
 		3FBF3A1F2C2FB67F0017D089 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF3A1E2C2FB67F0017D089 /* Base */; };
+		3FBF3A272C2FB6C40017D089 /* kenny.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF3A262C2FB6C40017D089 /* kenny.png */; };
+		3FBF3A292C2FB8D60017D089 /* InitializeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF3A282C2FB8D60017D089 /* InitializeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3FBF3A1B2C2FB67F0017D089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBF3A1E2C2FB67F0017D089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBF3A202C2FB67F0017D089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBF3A262C2FB6C40017D089 /* kenny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kenny.png; path = ../../../../Downloads/kenny.png; sourceTree = "<group>"; };
+		3FBF3A282C2FB8D60017D089 /* InitializeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3FBF3A1B2C2FB67F0017D089 /* Assets.xcassets */,
 				3FBF3A1D2C2FB67F0017D089 /* LaunchScreen.storyboard */,
 				3FBF3A202C2FB67F0017D089 /* Info.plist */,
+				3FBF3A262C2FB6C40017D089 /* kenny.png */,
+				3FBF3A282C2FB8D60017D089 /* InitializeViewController.swift */,
 			);
 			path = CatchKenny;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBF3A1C2C2FB67F0017D089 /* Assets.xcassets in Resources */,
+				3FBF3A272C2FB6C40017D089 /* kenny.png in Resources */,
 				3FBF3A1F2C2FB67F0017D089 /* Base in Resources */,
 				3FBF3A1A2C2FB67E0017D089 /* Base in Resources */,
 			);
@@ -140,6 +147,7 @@
 			files = (
 				3FBF3A172C2FB67E0017D089 /* ViewController.swift in Sources */,
 				3FBF3A132C2FB67E0017D089 /* AppDelegate.swift in Sources */,
+				3FBF3A292C2FB8D60017D089 /* InitializeViewController.swift in Sources */,
 				3FBF3A152C2FB67E0017D089 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
