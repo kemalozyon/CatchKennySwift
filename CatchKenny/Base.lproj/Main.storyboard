@@ -60,28 +60,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kenny.png" translatesAutoresizingMaskIntoConstraints="NO" id="17K-eo-0xf">
-                                <rect key="frame" x="16" y="309" width="125" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-WJ-NBf">
-                                <rect key="frame" x="30" y="133" width="333" height="40.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-WJ-NBf">
+                                <rect key="frame" x="30" y="123.00000000000001" width="333" height="40.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="139" translatesAutoresizingMaskIntoConstraints="NO" id="Eyq-v8-WuT">
+                                <rect key="frame" x="20" y="193.66666666666666" width="353" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Time: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9da-zG-oWI">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIJ-TD-Jlh">
+                                        <rect key="frame" x="264" y="0.0" width="89" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kenny.png" translatesAutoresizingMaskIntoConstraints="NO" id="17K-eo-0xf">
+                                <rect key="frame" x="16" y="269" width="121" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Wcs-WJ-NBf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="1Gz-KD-XwK"/>
+                            <constraint firstItem="Eyq-v8-WuT" firstAttribute="top" secondItem="Wcs-WJ-NBf" secondAttribute="bottom" constant="30" id="8cX-hD-Rgy"/>
                             <constraint firstItem="Wcs-WJ-NBf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Naa-zj-UJb"/>
+                            <constraint firstAttribute="trailing" secondItem="Eyq-v8-WuT" secondAttribute="trailing" constant="20" id="YMa-SP-eln"/>
+                            <constraint firstItem="Eyq-v8-WuT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b0y-n0-72E"/>
+                            <constraint firstItem="Wcs-WJ-NBf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dlV-Po-gbP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wcs-WJ-NBf" secondAttribute="trailing" constant="30" id="eKz-mN-ayy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9oa-hT-3uM"/>
                     <connections>
+                        <outlet property="imageView" destination="17K-eo-0xf" id="hDJ-Sk-CYo"/>
                         <outlet property="nameLabel" destination="Wcs-WJ-NBf" id="UYG-6X-8vQ"/>
+                        <outlet property="scoreLabel" destination="GIJ-TD-Jlh" id="ivT-5l-oos"/>
+                        <outlet property="timeLabel" destination="9da-zG-oWI" id="bbS-8y-Qv0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
