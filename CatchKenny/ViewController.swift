@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(gestureFunction))
         imageView.addGestureRecognizer(gestureRecognizer)
         imageView.frame.origin.x = 0
+        
     }
     @objc func countDown(){
         let numberX = Int.random(in: 0...275)
@@ -43,7 +44,6 @@ class ViewController: UIViewController {
             }
             let noButton = UIAlertAction(title: "NO", style: UIAlertAction.Style.default) { UIAlertAction in
                 _ = self.navigationController?.popToRootViewController(animated: true)
-
             }
             alert.addAction(okButton)
             alert.addAction(noButton)
