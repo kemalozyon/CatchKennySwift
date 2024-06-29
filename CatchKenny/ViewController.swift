@@ -23,15 +23,34 @@ class ViewController: UIViewController {
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(gestureFunction))
         imageView.addGestureRecognizer(gestureRecognizer)
-        
+        imageView.frame.origin.x = 0
     }
     @objc func countDown(){
+        let numberX = Int.random(in: 0...275)
+        let numberY = Int.random(in: 300...700)
+        imageView.frame.origin.x = CGFloat(numberX)
+        imageView.frame.origin.y = CGFloat(numberY)
         timeLabel.text = "Time: \(counter)"
         counter -= 1
+        if counter < 0{
+            timer.invalidate()
+            let alert = UIAlertController(title: "Game Over", message: "Your Score is: \(score) Do You Want To Play Again", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) { <#UIAlertAction#> in
+                
+            }
+            let noButton = UIAlertAction(title: "NO", style: UIAlertAction.Style.default)
+            alert.addAction(okButton)
+            alert.addAction(noButton)
+            self.present(alert, animated: true)
+        }
     }
     @objc func gestureFunction(){
         score += 1
         scoreLabel.text = "Score: \(score)"
+        let numberX = Int.random(in: 0...275)
+        let numberY = Int.random(in: 300...700)
+        imageView.frame.origin.x = CGFloat(numberX)
+        imageView.frame.origin.y = CGFloat(numberY)
     }
 
 }
