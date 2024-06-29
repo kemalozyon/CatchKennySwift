@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     var score = 0
     var userName = ""
     var timer = Timer()
-    var counter = 20
+    var counter = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        counter = 20
+        score = 0
         nameLabel.text = userName
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
         imageView.isUserInteractionEnabled = true
@@ -35,10 +37,13 @@ class ViewController: UIViewController {
         if counter < 0{
             timer.invalidate()
             let alert = UIAlertController(title: "Game Over", message: "Your Score is: \(score) Do You Want To Play Again", preferredStyle: UIAlertController.Style.alert)
-            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) { <#UIAlertAction#> in
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) { UIAlertAction in
+                self.viewDidLoad()
+                self.viewWillAppear(true)
+            }
+            let noButton = UIAlertAction(title: "NO", style: UIAlertAction.Style.default) { UIAlertAction in
                 
             }
-            let noButton = UIAlertAction(title: "NO", style: UIAlertAction.Style.default)
             alert.addAction(okButton)
             alert.addAction(noButton)
             self.present(alert, animated: true)
